@@ -1,0 +1,26 @@
+/* 1. VIEWPORT META TAG (deja inclus) */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+/* 2. MEDIA QUERIES pentru toate breakpoint-urile */
+@media (max-width: 1100px) { /* Tablete mari */ }
+@media (max-width: 900px)  { /* Tablete mici */ }
+@media (max-width: 768px)  { /* Telefoane mari */ }
+@media (max-width: 480px)  { /* Telefoane mici */ }
+
+/* 3. UNITĂȚI RELATIVE */
+rem, %, vw, vh, auto, min/max-width/height
+
+/* 4. FLEXBOX & GRID */
+display: flex;
+display: grid;
+flex-wrap: wrap;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+/* 5. IMAGINI & VIDEO RESPONSIVE */
+max-width: 100%;
+height: auto;
+object-fit: cover;
+
+/* 6. TOUCH-FRIENDLY ELEMENTS */
+min-height: 44px; /* Apple Human Interface Guidelines */
+padding: 1rem; /* Spațiu pentru degete */
