@@ -267,7 +267,9 @@
         }
         #sticky-cta a:hover { transform: scale(1.05); }
         @media (max-width: 480px) {
-            #sticky-cta span { font-size: 0.8rem; }
+            #sticky-cta { padding: 8px 12px; gap: 6px; }
+            #sticky-cta span { font-size: 0.7rem; line-height: 1.2; }
+            #sticky-cta a { padding: 6px 14px; font-size: 0.75rem; }
         }
 
         /* ===== HEADER ===== */
@@ -582,6 +584,20 @@
             color: var(--light-text-secondary);
             font-weight: 500;
         }
+        @media (max-width: 640px) {
+            .hero-stats {
+                gap: 8px;
+            }
+            .stat-pill {
+                padding: 10px 12px;
+                flex-direction: column;
+                gap: 2px;
+                border-radius: 12px;
+                flex: 1;
+            }
+            .stat-number { font-size: 1.1rem; }
+            .stat-label { font-size: 0.65rem; text-align: center; }
+        }
 
         /* ===== CTA BUTTONS ===== */
         .cta-group {
@@ -690,6 +706,24 @@
             font-weight: 500;
         }
         .trust-item i { color: var(--secondary); font-size: 1rem; }
+        @media (max-width: 640px) {
+            .trust-strip-inner {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px 8px;
+            }
+            .trust-item {
+                font-size: 0.75rem;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                gap: 6px;
+            }
+            .trust-item:last-child {
+                grid-column: 1 / -1;
+            }
+            .trust-item i { font-size: 1.1rem; }
+        }
 
         /* ===== SECTION ===== */
         .section {
